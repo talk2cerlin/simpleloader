@@ -1,7 +1,7 @@
 (function() {
-	var linkloader = {
+	var simpleloader = {
 		defaults: {
-			id: "linkloader",
+			id: "simpleloader",
 			init: false,
 			opacity: 0.9,
 			imgurl: false,
@@ -43,25 +43,25 @@
 			if(this.defaults.init)
 				$("#"+this.defaults.id).show(speed);
 			else
-				this.log("Please initialize the loader using linkloader.init()");
+				this.log("Please initialize the loader using simpleloader.init()");
 		},
 		hide: function(speed){
 			if(this.defaults.init)
 				$("#"+this.defaults.id).hide(speed);
 			else
-				this.log("Please initialize the loader using linkloader.init()");
+				this.log("Please initialize the loader using simpleloader.init()");
 		},
 		fadein: function(speed){
 			if(this.defaults.init)
 				$("#"+this.defaults.id).fadeIn(speed);
 			else
-				this.log("Please initialize the loader using linkloader.init()");
+				this.log("Please initialize the loader using simpleloader.init()");
 		},
 		fadeout: function(speed){
 			if(this.defaults.init)
 				$("#"+this.defaults.id).fadeOut(speed);
 			else
-				this.log("Please initialize the loader using linkloader.init()");
+				this.log("Please initialize the loader using simpleloader.init()");
 		},
 		remove: function(){
 			$("#"+this.defaults.id).remove();
@@ -84,5 +84,5 @@
 			return true;
 		}
 	};
-	window.linkloader = linkloader;
+	window.simpleloader = simpleloader;
 })()
