@@ -2,26 +2,25 @@ Simpleloader
 ============
 
 #####Usage:
+	var options = {
+		id: "simpleloader",
+		opacity: 0.9,
+		imgurl: false,
+		imgwidth: 50,
+		imgheight: 50,
+		autoopen: false,
+		selector: false
+	}
 
-var options = {
-	id: "simpleloader",
-	opacity: 0.9,
-	imgurl: false,
-	imgwidth: 50,
-	imgheight: 50,
-	autoopen: false,
-	selector: false
-}
+	simpleloader.init(options);
 
-simpleloader.init(options);
-
-id - ID of the div which will be created.
-opacity - opacity of the overlay.
-imgurl - loader image url.
-imagewidth - as the name says its just the image width in pixels (put this without px values).
-imageheight - as the name says its just the image height in pixels (put this without px values).
-autoopen - if set to true, the loading will appear once the plugin is initialized.
-selector - selector to which the loader has to be applied.
+	id - ID of the div which will be created.
+	opacity - opacity of the overlay.
+	imgurl - loader image url.
+	imagewidth - as the name says its just the image width in pixels (put this without px values).
+	imageheight - as the name says its just the image height in pixels (put this without px values).
+	autoopen - if set to true, the loading will appear once the plugin is initialized.
+	selector - selector to which the loader has to be applied.
 
 #####Functions:
 	init - to initialise the plugin (has to be called before calling anyother function) - Takes object parameter which is explained in the top
