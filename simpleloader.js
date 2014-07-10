@@ -82,7 +82,7 @@
 				this.defaults[attrname] = obj[attrname]; 
 			}
 		},
-		isEmpty: function(obj) {
+		isempty: function(obj) {
 			for(var prop in obj) {
 				if(obj.hasOwnProperty(prop))
 					return false;
