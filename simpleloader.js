@@ -51,6 +51,12 @@
 			else
 				this.log("Please initialize the loader using simpleloader.init()");
 		},
+		fadeIn: function(speed){
+			this.fadein(speed);
+		},
+		fadeOut: function(speed){
+			this.fadeout(speed);
+		},
 		fadein: function(speed){
 			if(this.defaults.init)
 				$("#"+this.defaults.id).fadeIn(speed);
