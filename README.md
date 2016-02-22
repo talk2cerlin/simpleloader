@@ -16,19 +16,19 @@ Simpleloader
 
 #####To show the loader:
 
-	simpleloader.fadeIn()
+	simpleloader.fadeIn();
 
 #####To hide the loader:
 
-	simpleloader.fadeOut()
+	simpleloader.fadeOut();
 
 #####To get the loading text:
 
-	simpleloader.getText()
+	simpleloader.getText();
 
 #####To update the loading text:
 
-	simpleloader.setText()
+	simpleloader.setText("New text goes here..");
 
 ---
 
