@@ -22,5 +22,10 @@ Simpleloader
 
 	simpleloader.fadeOut()
 
+---
 
 	NOTE: For people who use twitter bootstrap, you can ignore the css file.
+
+---
+
+	NOTE: Please make sure the loader is added in the bottom of the page.
