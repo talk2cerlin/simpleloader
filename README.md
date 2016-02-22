@@ -1,7 +1,7 @@
 Simpleloader
 ============
 
-#####Usage:
+###Usage:
 	var options = {
 		id: "simpleloader",
 		opacity: .5,
@@ -14,11 +14,10 @@ Simpleloader
 	opacity - opacity of the overlay.
 	autoopen - if set to true, the loading will appear once the plugin is initialized.
 
-#####Usage:
-###To show the loader:
+#####To show the loader:
 
 	simpleloader.fadeIn()
 
-###To hide the loader:
+#####To hide the loader:
 
 	simpleloader.fadeOut()
