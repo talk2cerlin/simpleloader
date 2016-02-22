@@ -3,6 +3,7 @@
         initFlag: false,
         defaults: {
             id: "simpleloader",
+            text : "Loading...",
             opacity: .5,
             autoOpen: false,
         },
@@ -24,7 +25,7 @@
             if (!$("." + this.defaults.id).exists()) {
                 var e = $("body");
                 e.append('<div class="' + this.defaults.id + '" style="display:none;position:fixed;width:100%;top:0;background-color:black;height:100%;left:0;z-index:99999;opacity:' + this.defaults.opacity + ';" ></div>');
-                e.append('<div class="' + this.defaults.id + ' progress progress-striped active" style="display:none; position: fixed !important; width: 16%; z-index: 100000; height: 20px;margin: auto; left: 0; top: 0; right: 0; bottom: 0; "> <div style="width: 100%;" class="progress-bar progress-bar-success">Loading...</div> </div>');
+                e.append('<div class="' + this.defaults.id + ' progress progress-striped active" style="display:none; position: fixed !important; width: 16%; z-index: 100000; height: 20px;margin: auto; left: 0; top: 0; right: 0; bottom: 0; "> <div style="width: 100%;" class="progress-bar progress-bar-success simpleloader-text">' + this.defaults.text + '</div> </div>');
                 this.initFlag = true;
             }
             if (this.defaults.autoOpen) {
@@ -53,6 +54,13 @@
             if (this.initFlag) $("." + this.defaults.id).fadeOut(e);
             else this.log("Please initialize the loader using simpleloader.init()")
         },
+    	getText: function(){
+    		return this.defaults.text;
+    	},
+    	setText: function(text){
+    		this.defaults.text = text;
+    		$('.simpleloader-text').text(text);
+    	},
         remove: function() {
             $("." + this.defaults.id).remove();
             this.initFlag = false
