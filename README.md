@@ -21,3 +21,6 @@ Simpleloader
 #####To hide the loader:
 
 	simpleloader.fadeOut()
+
+
+	NOTE: For people who use twitter bootstrap, you can ignore the css file.
