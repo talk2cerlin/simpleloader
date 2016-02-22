@@ -22,6 +22,14 @@ Simpleloader
 
 	simpleloader.fadeOut()
 
+#####To get the loading text:
+
+	simpleloader.getText()
+
+#####To update the loading text:
+
+	simpleloader.setText()
+
 ---
 
 	NOTE: For people who use twitter bootstrap, you can ignore the css file.
